@@ -99,7 +99,8 @@ header nav .search input {
     border-color: var(--main-color);
     padding: 15px;
     border-bottom-left-radius: 5px;
-    border-top-left-radius: 5px
+    border-top-left-radius: 5px;
+    color: #fff
 }
 
 header nav .search button {
