@@ -170,16 +170,14 @@ header nav .search button {
 }
 
 .landing form {
-    height: 380px;
     background: linear-gradient(to top, rgb(0, 0, 0, 0.8) 50%, rgb(0, 0, 0, 0.8) 50%);
-    border-radius: 10px;
+    border-radius: 6px;
     padding: 25px;
-    width: 320px;
+    width: 350px;
     text-align: center
 }
 
 .landing form h2 {
-    width: 220px;
     font-family: sans-serif;
     text-align: center;
     color: red;
@@ -210,6 +208,10 @@ header nav .search button {
     border-radius: 6px;
     outline: none;
     border: none
+}
+.landing form button a{
+    color: black;
+    font-weight: bold
 }
 
 .landing form p {
@@ -261,6 +263,11 @@ header nav .search button {
         line-height: 1.5;
         font-size: 15px;
         padding-bottom: 5px
+    }
+    
+    .landing{
+        padding: 0;
+        justify-content: center
     }
 }
 
