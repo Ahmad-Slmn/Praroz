@@ -1,0 +1,330 @@
+/* Start My Frame work */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    text-transform: capitalize;
+    font-family: arial;
+    outline: none
+}
+
+:root {
+    --trans: .4s;
+    --main-color: #ff7200
+}
+
+::placeholder {
+    color: #fff;
+    font-family: arial;
+    transition-duration: var(--trans)
+}
+
+:focus::placeholder {
+    opacity: 0
+}
+
+
+.fa-bars{
+    z-index: 9;
+    position: fixed;
+    top: 10px;
+    right: 5px;
+    font-size: 25px;
+    cursor: pointer;
+    display: none
+}
+
+
+main {
+    background: linear-gradient(to top, rgb(0, 0, 0, 0.5) 50%, rgb(0, 0, 0, 0.5) 50%), url(../image/1.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #fff
+}
+
+/* End My Frame work */
+
+/* Start Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px
+}
+
+header h2 {
+    color: var(--main-color);
+    font-size: 35px
+}
+
+header nav {
+    display: flex;
+    grid-gap: 10px;
+    justify-content: space-between
+}
+
+
+header nav ul {
+
+    display: flex;
+    align-items: center
+}
+
+header nav ul li {
+    margin-left: 10px;
+    font-size: 20px
+}
+
+
+nav ul li a {
+    color: #fff;
+    font-weight: bold;
+    transition-duration: var(--trans);
+    display: block
+}
+
+
+header nav ul li a:hover {
+    color: var(--main-color);
+    transform: translateX(5px)
+}
+
+header nav .search input {
+    width: 200px;
+    max-height: 20px;
+    background: transparent;
+    border: 1px solid;
+    border-color: var(--main-color);
+    padding: 15px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px
+}
+
+header nav .search button {
+    width: 100px;
+    height: 35px;
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    color: #fff;
+    font-size: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer
+}
+
+/* End Header */
+
+/* Start Lnading */
+
+.landing{
+    display: flex;
+    justify-content: space-between;
+    padding-right:20px;
+    align-items: center;
+    min-height: 100vh
+}
+
+.landing .text > p {
+    padding-left: 20px;
+    padding-bottom: 25px;
+    letter-spacing: 1.2px;
+    line-height: 30px
+}
+
+.landing .text h1 {
+    font-family: 'times new roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px
+}
+
+.landing .text h1 span {
+    color: var(--main-color);
+    font-size: 60px;
+
+}
+
+.landing .text button {
+    width: 160px;
+    height: 40px;
+    background-color: var(--main-color);
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: var(--trans);
+}
+
+.landing .text button:hover {
+    background-color: #fff
+}
+
+
+.landing .text button a {
+    color: black
+}
+
+.landing form {
+    height: 380px;
+    background: linear-gradient(to top, rgb(0, 0, 0, 0.8) 50%, rgb(0, 0, 0, 0.8) 50%);
+    border-radius: 10px;
+    padding: 25px;
+    width: 320px;
+    text-align: center
+}
+
+.landing form h2 {
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: red;
+    font-size: 22px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px
+}
+
+.landing form input {
+    width: 100%;
+    height: 35px;
+    background: transparent;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+    border-bottom: 1px solid var(--main-color)
+}
+
+
+.landing form button {
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 20px;
+    border-radius: 6px;
+    outline: none;
+    border: none
+}
+
+.landing form p {
+    font-size: 17px;
+    text-align: center;
+    font-family: arial;
+    padding: 5px;
+
+}
+
+.landing form .link {
+    color: var(--main-color)
+}
+
+.landing form .icuns a {
+    color: #fff
+}
+
+.landing form .icuns i {
+    font-size: 22px;
+    padding-left: 14px;
+    padding-top: 5px
+}
+
+.landing form .icuns i:hover {
+    color: var(--main-color);
+    transition-duration: var(--trans)
+}
+/* End Landing */
+
+@media(max-width:450px){
+    
+    header nav .search button{
+        margin: 10px 0;
+        width: 89%
+    }
+    
+    .landing .text h1{
+        font-size: 20px;
+        margin-top: 20%
+    }
+    
+    .landing .text h1 span{
+        font-size: 20px
+    }
+    
+    .landing .text > p{
+        letter-spacing: 0;
+        line-height: 1.5;
+        font-size: 15px;
+        padding-bottom: 5px
+    }
+}
+
+@media(max-width:767px) {
+    
+    .search{
+        display: block !important;
+        margin-bottom: 10px
+    }
+
+    header{
+        padding: 5px 0
+    }
+    header nav {
+        position: fixed;
+        top: 0;
+        z-index: 2;
+        width: 100%;
+        padding: 70px 7% 0;
+        max-height: 70px;
+        overflow: hidden;
+        transition: var(--trans);
+        background: linear-gradient(to top, rgb(0, 0, 0, 0.8) 50%, rgb(0, 0, 0, 0.8) 50%);
+        flex-direction: row-reverse
+    }
+
+    header nav ul {
+        flex-direction: column;
+        margin-bottom: 10px
+        
+    }
+
+    header nav ul li {
+        padding: 0
+    }
+
+    header nav ul li a {
+        padding: 10px 0;
+        font-size: 20px
+    }
+
+    header h2 {
+        position: fixed;
+        top: 10px;
+        left: 5px;
+        z-index: 9
+    }
+
+
+    .hidemenu {
+        max-height: 375px !important
+    }
+
+   .fa-bars {
+        display: block
+    }
+    
+    .landing{
+        flex-direction: column
+    }
+}
+
+@media(max-width:991px) {
+    .search {
+        display: none
+    }
+}

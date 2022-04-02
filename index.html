@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta charset="UTF-8" />
+    <meta name="discription" content="js" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Praroz</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+
+    <!-- Font Normalize -->
+    <link rel="stylesheet" href="css/normalize.css" />
+
+    <!-- My Main Style-css-->
+    <link rel='stylesheet' href="css/style.css" />
+</head>
+
+<body>
+    <main>
+        <!-- Start header -->
+        <header>
+            <h2>praroz</h2>
+            <nav>
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li id="li"> <a href="#">about</a></li>
+                    <li><a href="#">servise</a></li>
+                    <li><a href="#">design</a></li>
+                    <li> <a href="#">contect</a></li>
+                </ul>
+                <div class="search">
+                    <input type="search" name="search" placeholder="type to text">
+                    <a href="#"><button>search</button></a>
+                </div>
+            </nav>
+            <i class="fa fa-bars"></i>
+        </header>
+        <!-- End header -->
+
+        <!-- Start Landing -->
+        <div class="landing">
+            <div class="text">
+                <h1>web design &amp; <br> <span>devlovement</span><br>course</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum<br> has been the industry's standard dummy text ever since the 1500s<br> when an gtext of the printing and typesetting industry</p>
+                <button><a href="#">join-us</a></button>
+            </div>
+            <div class="box-form">
+                <form>
+                    <h2>login here</h2>
+                    <input type="email" name="email" placeholder="enter email here">
+                    <input type="password" name="password" placeholder="enter password here">
+                    <button><a href="#">login</a></button>
+                    <p>dont' have a acount?</p>
+                    <a href="#" class="link">sign up</a> <span>here</span>
+                    <p>log in with </p>
+
+                    <div class="icuns">
+                        <a href="http://www.facebook.com"><i class=" fab fa-facebook-square"></i></a>
+                        <a href="http://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                        <a href="http://www.twitter.com"><i class=" fab fa-twitter"></i></a>
+                        <a href="http://www.google.com"><i class="fab fa-google-plus-square"></i></a>
+                        <a href="http://www.skype.com"><i class="fab fa-skype"></i></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- End Landing -->
+    </main>
+    <script>
+        document.querySelector(".fa-bars").onclick = function() {
+
+            document.querySelector("header nav").classList.toggle("hidemenu")
+        }
+
+        let links = document.querySelectorAll("nav ul li a, .search a");
+
+        links.forEach(function(e) {
+
+            e.onclick = function(el) {
+
+                el.preventDefault();
+
+                document.querySelector("header nav").classList.toggle("hidemenu")
+            }
+        })
+    </script>
+</body></html>
